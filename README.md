@@ -1,4 +1,4 @@
-Convert to NextJS 13 from (https://github.com/Kamona-WD/kwd-dashboard)[https://github.com/Kamona-WD/kwd-dashboard]
+Convert to NextJS 13 from [https://github.com/Kamona-WD/kwd-dashboard](https://github.com/Kamona-WD/kwd-dashboard)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
