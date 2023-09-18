@@ -52,7 +52,7 @@ const AdminSideBarLayoutView = ({ children }: PropsWithChildren<Props>) => {
         />
         {/* Sidebars button */}
         {!isAlwaysSidebarOpen && (
-          <div className="fixed right-10 top-5 flex items-center space-x-4">
+          <div className="fixed right-10 top-5 flex items-center space-x-4 z-[1]">
             <button
               onClick={() => {
                 setIsSidebarOpen(true);
@@ -99,7 +99,16 @@ const AdminSideBarLayoutView = ({ children }: PropsWithChildren<Props>) => {
           </div>
         )}
         {/* Main content */}
-        <main className="flex-1">{children}</main>
+        <main className={classNames("flex-1")}>
+          <div
+            className={classNames(
+              "relative flex flex-col h-full w-full overflow-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch",
+              !isAlwaysSidebarOpen && "mt-8"
+            )}
+          >
+            {children}
+          </div>
+        </main>
         {/* Panels */}
         {/* Settings Panel */}
         {/* Backdrop */}
