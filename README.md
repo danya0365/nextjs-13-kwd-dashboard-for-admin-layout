@@ -2,6 +2,8 @@
 
 Convert to NextJS 13 from [https://github.com/Kamona-WD/kwd-dashboard](https://github.com/Kamona-WD/kwd-dashboard)
 
+Live preview [https://nextjs-13-kwd-dashboard-for-admin-layout.vercel.app/](https://nextjs-13-kwd-dashboard-for-admin-layout.vercel.app/)
+
 ## Example UI
 
 ![demo-dark](example-ui/demo-dark.png "demo-dark")
