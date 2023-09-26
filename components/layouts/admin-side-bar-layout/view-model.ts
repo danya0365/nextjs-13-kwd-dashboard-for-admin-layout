@@ -6,7 +6,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const useViewModel = () => {
   const { resolvedTheme, setTheme } = useTheme();
-  const [isMount, setIsMount] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAlwaysSidebarOpen, setIsAlwaysSidebarOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
@@ -43,31 +42,26 @@ const useViewModel = () => {
   }, [isSettingPanelOpen]);
 
   useEffect(() => {
-    setIsMount(true);
-  }, []);
-
-  useEffect(() => {
     if (isLargeDevice || isExtraLargeDevice) {
       setIsAlwaysSidebarOpen(true);
     } else {
       setIsAlwaysSidebarOpen(false);
     }
-  }, [isLargeDevice, isLargeDevice]);
+  }, [isLargeDevice, isExtraLargeDevice]);
 
   const setSystemTheme = useCallback(() => {
     setTheme("system");
-  }, []);
+  }, [setTheme]);
 
   const setLightTheme = useCallback(() => {
     setTheme("light");
-  }, []);
+  }, [setTheme]);
 
   const setDarkTheme = useCallback(() => {
     setTheme("dark");
-  }, []);
+  }, [setTheme]);
 
   return {
-    isMount,
     isSidebarOpen,
     isAlwaysSidebarOpen,
     setIsSidebarOpen,

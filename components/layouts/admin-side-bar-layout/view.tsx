@@ -15,7 +15,6 @@ export interface Props {}
 
 const AdminSideBarLayoutView = ({ children }: PropsWithChildren<Props>) => {
   const {
-    isMount,
     isSidebarOpen,
     isAlwaysSidebarOpen,
     setIsSidebarOpen,
@@ -36,8 +35,6 @@ const AdminSideBarLayoutView = ({ children }: PropsWithChildren<Props>) => {
   return (
     <div className={classNames(isDarkTheme && "dark")}>
       <div className="dark:bg-dark dark:text-light flex h-screen bg-gray-100 text-gray-900 antialiased">
-        {/* Loading screen */}
-        <LoadingView isLoading={!isMount} />
         {/* Sidebar */}
         <BackdropView
           isOpen={isSidebarOpen && !isAlwaysSidebarOpen}
