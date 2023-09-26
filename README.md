@@ -1,4 +1,13 @@
+## KWD Dashboard for NextJS
+
 Convert to NextJS 13 from [https://github.com/Kamona-WD/kwd-dashboard](https://github.com/Kamona-WD/kwd-dashboard)
+
+## Example UI
+
+![demo-dark](example-ui/demo-dark.png "demo-dark")
+![demo-light](example-ui/demo-light.png "demo-light")
+
+## Next JS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
